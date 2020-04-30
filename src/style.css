@@ -1,0 +1,51 @@
+
+.navbar {
+    background-color: #563d7c;
+    color: white;
+}   
+
+.devf-color {
+    background-color: #563d7c !important;
+    color: white !important;
+}
+
+.devf-text {
+    color: #563d7c;
+}
+
+.delete-icon {
+    display: none;
+}
+
+.delete-icon:hover {
+    cursor: pointer;
+    color: red;
+}
+
+.peopleItem:hover .delete-icon{
+    display: flex;
+}
+
+.people-list {
+    max-height: 60vh;
+    overflow: auto;
+}
+
+.spinner {
+    width: 100px !important;
+    height: 100px !important;
+    font-size: 70px;
+}
+
+.t-selection {
+    position: relative;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: gray;
+    text-align: center;
+}

@@ -1,26 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {
+	Navbar,
+	NavbarBrand,
+} from 'reactstrap';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import { TortureContainer } from './containers/tortureContainer';
+
+const App = () => {
+	return (
+		<React.Fragment>
+			<Navbar expand="md">
+				<NavbarBrand>Torture.f <span role='img' aria-label='emoji'>🤍</span></NavbarBrand>
+			</Navbar>
+			<TortureContainer />
+			<div className="footer">
+				<p>With <span role='img' aria-label='emoji'>♥</span> by <a href='https://github.com/Lulzphantom' target="_blank" without rel="noopener noreferrer">Lulzphantom</a></p>
+			</div>
+		</React.Fragment>
+	);
 }
 
 export default App;
